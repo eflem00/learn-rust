@@ -25,4 +25,3 @@ fn route(ip_addr: &IpAddr) {
         IpAddr::V6(v) => println!("v6 addr detected {}", v)
     }
 }
-
