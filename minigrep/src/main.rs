@@ -1,15 +1,16 @@
 use std::env;
 use std::process;
 
-use minigrep;
+use minigrep_evan;
 
 fn main() {
-    let config = minigrep::Config::new(env::args(), env::vars().collect()).unwrap_or_else(|err| {
-        eprintln!("Problem parsing arguments: {}", err);
-        process::exit(1);
-    });
+    let config =
+        minigrep_evan::Config::new(env::args(), env::vars().collect()).unwrap_or_else(|err| {
+            eprintln!("Problem parsing arguments: {}", err);
+            process::exit(1);
+        });
 
-    minigrep::run(config).unwrap_or_else(|err| {
+    minigrep_evan::run(config).unwrap_or_else(|err| {
         eprintln!("Application error: {}", err);
         process::exit(1);
     });
