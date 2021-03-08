@@ -1,5 +1,5 @@
 [package]
-name = "minigrep"
+name = "minigrep-evan"
 version = "0.1.0"
 authors = ["Evan Fleming <evan.gordon.fleming@gmail.com>"]
 edition = "2018"
